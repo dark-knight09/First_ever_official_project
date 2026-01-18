@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Zenit Petroleum</title>
+   <link rel="icon" type="image/png" href="imges and videos/byco">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-green-400">Zenit Petroleum</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-400">About</a></li>
+        <li><a href="services.html" class="hover:text-green-400">Services</a></li>
+        <li><a href="hotel.html" class="hover:text-green-400">Hotel</a></li>
+        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold text-green-400 mb-4">Get in Touch</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Have questions, feedback, or just want to say hello? We’d love to hear from you.  
+        Whether it’s about our services, dhaba, or fuel — your message matters.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Form -->
+      <form class="bg-gray-800 p-8 rounded-lg shadow-lg space-y-5">
+        <div>
+          <label for="name" class="block text-gray-300 mb-2">Full Name</label>
+          <input id="name" type="text" placeholder="Enter your name" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-400">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-300 mb-2">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-400">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-300 mb-2">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message..." class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 py-2 rounded text-white font-semibold">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4 text-green-400">Contact Information</h3>
+        <ul class="space-y-3 text-gray-400">
+          <li><span class="text-green-400">📍</span> Location: [Your Station Location Here]</li>
+          <li><span class="text-green-400">📞</span> Phone: +92 300 0000000</li>
+          <li><span class="text-green-400">✉️</span> Email: info@zenitpetroleum.com</li>
+          <li><span class="text-green-400">🕒</span> Open 24/7 — because fuel doesn’t sleep.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6">
+    <p class="text-gray-400">© 2025 Zenit Petroleum. All rights reserved.</p>
+  </footer>
+</body>
+</html>

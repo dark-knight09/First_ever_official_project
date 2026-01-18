@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>呪術廻戦 </title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images-videos/Logo.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS (for simple entrance animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">
+        <img src="images-videos/Logo.png" alt="JJK Logo" class="brand-logo" height="42">
+        <div class="brand-text">
+          <span class="jp">呪術廻戦</span>
+          <small class="sub">Jujutsu Kaisen Universe — Fan Hub</small>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <!-- External links -->
+        <li><a href="https://hianime.to/watch/jujutsu-kaisen-2nd-season-18413?ep=102662" target="_blank" rel="noopener">Season (Watch)</a></li>
+        <li><a href="https://thejujutsukaisenread.com/jujutsu-kaisen-chapter-1/" target="_blank" rel="noopener">Read Manga</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="hero">
+    <div class="hero-inner" data-aos="fade-up">
+      <h1>呪術廻戦</h1>
+      <p class="tagline">Discover sorcerers and cursed spirits. Balanced roster, cinematic design, and live search.</p>
+      <div class="hero-ctas">
+        <a href="#rosters" class="btn primary">Explore Roster</a>
+        <a href="characters.html" class="btn outline">Character Encyclopedia</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- MUSIC CONTROL -->
+  <button id="musicToggle" class="music-toggle" aria-pressed="false" title="Toggle background music">🔈 Music</button>
+  <audio id="bgMusic" src="images-videos/theme-song-2.mp3" loop preload="none"></audio>
+
+  <!-- EMBEDDED VIDEO (restored) -->
+  <section class="media-section" data-aos="fade-up" aria-label="featured video" style="padding:28px 18px; text-align:center;">
+    <h2 style="color:#fff;margin-bottom:12px;">Featured Fight Scene</h2>
+    <div class="video-wrap" style="max-width:1100px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.6);">
+      <!-- original YouTube embed preserved -->
+   <iframe width="1200" height="600" src="https://www.youtube.com/embed/RYI-WG_HFV8?si=QjtOfDJG4AU44tzC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="muted" style="margin-top:10px;color:var(--muted);">Original embed — opens on YouTube if you want full-screen</p>
+  </section>
+
+  
+  <!-- ROSTERS -->
+  <main id="rosters">
+    <!-- Sorcerers (15) -->
+    <section class="roster-section" aria-labelledby="sorcerers-heading" data-aos="fade-up">
+      <h2 id="sorcerers-heading">Sorcerers — Heroes (15)</h2>
+      <div class="grid" id="sorcerers">
+        <!-- cards (same as previously provided) -->
+        <article class="card" data-name="Satoru Gojo" data-type="sorcerer" data-keywords="limitless six eyes hollow purple infinity">
+          <img src="images-videos/gojo.jpeg" alt="Satoru Gojo" loading="lazy">
+          <h3>Gojo Satoru</h3>
+          <p class="muted">Limitless & Six Eyes — overwhelming presence.</p>
+        </article>
+
+        <article class="card" data-name="Yuji Itadori" data-type="sorcerer" data-keywords="black flash divergent fist host sukuna">
+          <img src="images-videos/itadori.jpeg" alt="Yuji Itadori" loading="lazy">
+          <h3>Yuji Itadori</h3>
+          <p class="muted">Host of Sukuna; raw strength & heart of gold.</p>
+        </article>
+
+        <article class="card" data-name="Megumi Fushiguro" data-type="sorcerer" data-keywords="ten shadows mahora ga shikigami">
+          <img src="images-videos/megumi.jpeg" alt="Megumi Fushiguro" loading="lazy">
+          <h3>Megumi Fushiguro</h3>
+          <p class="muted">Ten Shadows user — tactical summoner.</p>
+        </article>
+
+        <article class="card" data-name="Nobara Kugisaki" data-type="sorcerer" data-keywords="straw doll resonance hairpin">
+          <img src="images-videos/nobara.jpeg" alt="Nobara Kugisaki" loading="lazy">
+          <h3>Nobara Kugisaki</h3>
+          <p class="muted">Straw Doll Technique specialist — ruthless precision.</p>
+        </article>
+
+        <article class="card" data-name="Kento Nanami" data-type="sorcerer" data-keywords="ratio technique collapse analytical">
+          <img src="images-videos/nanami 1.jpeg" alt="Kento Nanami" loading="lazy">
+          <h3>Kento Nanami</h3>
+          <p class="muted">Ratio Technique — calm, efficient fighter.</p>
+        </article>
+
+        <article class="card" data-name="Maki Zenin" data-type="sorcerer" data-keywords="heavenly restriction weapon mastery">
+          <img src="images-videos/maki 2.jpeg" alt="Maki Zenin" loading="lazy">
+          <h3>Maki Zenin</h3>
+          <p class="muted">Weapon master with superb physicals.</p>
+        </article>
+
+        <article class="card" data-name="Toge Inumaki" data-type="sorcerer" data-keywords="cursed speech explosive command">
+          <img src="images-videos/Toge 2.jpeg" alt="Toge Inumaki" loading="lazy">
+          <h3>Toge Inumaki</h3>
+          <p class="muted">Cursed Speech — words become weapons.</p>
+        </article>
+
+        <article class="card" data-name="Panda" data-type="sorcerer" data-keywords="core switching gorilla mode">
+          <img src="images-videos/Panda.jpeg" alt="Panda" loading="lazy">
+          <h3>Panda</h3>
+          <p class="muted">Cursed corpse with multiple cores — versatile brawler.</p>
+        </article>
+
+        <article class="card" data-name="Yuta Okkotsu" data-type="sorcerer" data-keywords="rika copy technique special grade">
+          <img src="images-videos/yuta 1.jpeg" alt="Yuta Okkotsu" loading="lazy">
+          <h3>Yuta Okkotsu</h3>
+          <p class="muted">Special Grade — Rika-bound prodigy.</p>
+        </article>
+
+        <article class="card" data-name="Kokichi Muta" data-type="sorcerer" data-keywords="mech curse tech support">
+          <img src="images-videos/kokichi.jpeg" alt="Kokichi Muta" loading="lazy">
+          <h3>Kokichi Muta</h3>
+          <p class="muted">Technical support — curse-based gadgets.</p>
+        </article>
+
+        <article class="card" data-name="Mei Mei" data-type="sorcerer" data-keywords="black bird manipulation tactical">
+          <img src="images-videos/mimi 1.jfif" alt="Mei Mei" loading="lazy">
+          <h3>Mei Mei</h3>
+          <p class="muted">Black Bird manipulation — opportunistic tactician.</p>
+        </article>
+
+        <article class="card" data-name="Kinji Hakari" data-type="sorcerer" data-keywords="gambler private pure love train">
+          <img src="images-videos/hakari 1.jpeg" alt="Kinji Hakari" loading="lazy">
+          <h3>Kinji Hakari</h3>
+          <p class="muted">Gambler sorcerer with explosive specialty moves.</p>
+        </article>
+
+        <article class="card" data-name="Hiromi Higuruma" data-type="sorcerer" data-keywords="judge court deadly sentencing">
+          <img src="images-videos/horimi 1.jpeg" alt="Hiromi Higuruma" loading="lazy">
+          <h3>Hiromi Higuruma</h3>
+          <p class="muted">Judgement-based techniques — courtroom terror.</p>
+        </article>
+
+        <article class="card" data-name="Utahime" data-type="sorcerer" data-keywords="teacher support">
+          <img src="images-videos/UTAHAMIE 1.jpeg" alt="Utahime" loading="lazy">
+          <h3>Utahime</h3>
+          <p class="muted">Seasoned sorcerer and mentor figure.</p>
+        </article>
+
+        <article class="card" data-name="Kasumi Miwa" data-type="sorcerer" data-keywords="swordsmanship student">
+          <img src="images-videos/kasumi.jpeg" alt="Kasumi Miwa" loading="lazy">
+          <h3>Kasumi Miwa</h3>
+          <p class="muted">Student swordswoman with solid resolve.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cursed Spirits (15) -->
+    <section class="roster-section" aria-labelledby="spirits-heading" data-aos="fade-up">
+      <h2 id="spirits-heading">Cursed Spirits & Villains (15)</h2>
+      <div class="grid" id="spirits">
+        <article class="card" data-name="Ryomen Sukuna" data-type="spirit" data-keywords="malevolent shrine cleave dismantle">
+          <img src="images-videos/sakuna.jpeg" alt="Ryomen Sukuna" loading="lazy">
+          <h3>Ryomen Sukuna</h3>
+          <p class="muted">The King of Curses — ancient and brutal.</p>
+        </article>
+
+        <article class="card" data-name="Mahito" data-type="spirit" data-keywords="idle transfiguration soul manipulation">
+          <img src="images-videos/majito.jpeg" alt="Mahito" loading="lazy">
+          <h3>Mahito</h3>
+          <p class="muted">Soul manipulator — ideologically dangerous.</p>
+        </article>
+
+        <article class="card" data-name="Jogo" data-type="spirit" data-keywords="volcano fire domain">
+          <img src="images-videos/gojo 2.jpeg" alt="Jogo" loading="lazy">
+          <h3>Jogo</h3>
+          <p class="muted">Volcanic curse with destructive fire power.</p>
+        </article>
+
+        <article class="card" data-name="Hanami" data-type="spirit" data-keywords="plant manipulation nature">
+          <img src="images-videos/hanami.jpeg" alt="Hanami" loading="lazy">
+          <h3>Hanami</h3>
+          <p class="muted">Nature curse — resilient and strategic.</p>
+        </article>
+
+        <article class="card" data-name="Choso" data-type="spirit" data-keywords="blood manipulation supernova">
+          <img src="images-videos/choso 1.jfif" alt="Choso" loading="lazy">
+          <h3>Choso</h3>
+          <p class="muted">Blood manipulation — precise and lethal.</p>
+        </article>
+
+        <article class="card" data-name="Suguru Geto" data-type="spirit" data-keywords="cursed spirit manipulation army">
+          <img src="images-videos/geto 3.jpeg" alt="Suguru Geto" loading="lazy">
+          <h3>Suguru Geto</h3>
+          <p class="muted">Master of cursed spirit armies.</p>
+        </article>
+
+        <article class="card" data-name="Kenjaku" data-type="spirit" data-keywords="possession culling game mastermind">
+          <img src="images-videos/kanjaki 1.jpeg" alt="Kenjaku" loading="lazy">
+          <h3>Kenjaku</h3>
+          <p class="muted">Ancient schemer behind major tragedies.</p>
+        </article>
+
+        <article class="card" data-name="Dagon" data-type="spirit" data-keywords="ocean domain water">
+          <img src="images-videos/gragon 1.jpeg" alt="Dagon" loading="lazy">
+          <h3>Dagon</h3>
+          <p class="muted">Ocean-based domain expansion — overwhelming.</p>
+        </article>
+
+        <article class="card" data-name="Toji Fushiguro" data-type="spirit" data-keywords="inverted spear sorcerer killer">
+          <img src="images-videos/yoji 3.jpeg" alt="Toji Fushiguro" loading="lazy">
+          <h3>Toji Fushiguro</h3>
+          <p class="muted">Assassin with no cursed energy — terrifyingly effective.</p>
+        </article>
+
+        <article class="card" data-name="Variant A" data-type="spirit" data-keywords="domain strong">
+          <img src="images-videos/rika 1.jpeg" alt="Variant Curse A" loading="lazy">
+          <h3>Variant Curse A</h3>
+          <p class="muted">Field variant with unusual domain traits.</p>
+        </article>
+
+        <article class="card" data-name="Variant B" data-type="spirit" data-keywords="swarm speed">
+          <img src="images-videos/fingerer.jpeg" alt="Variant Curse B" loading="lazy">
+          <h3>Variant Curse B</h3>
+          <p class="muted">High-speed swarm curse used in ambushes.</p>
+        </article>
+
+        <article class="card" data-name="Variant C" data-type="spirit" data-keywords="regen tough">
+          <img src="images-videos/varient c.jpeg" alt="Variant Curse C" loading="lazy">
+          <h3>Variant Curse C</h3>
+          <p class="muted">Regenerative entity — hard to finish off.</p>
+        </article>
+
+        <article class="card" data-name="Crowd Curse" data-type="spirit" data-keywords="mob ambush">
+          <img src="images-videos/crowd-curses-1.jpg" alt="Crowd Curse" loading="lazy">
+          <h3>Crowd Curse</h3>
+          <p class="muted">Multiple small curses acting in unison.</p>
+        </article>
+
+        <article class="card" data-name="Ancient Curse" data-type="spirit" data-keywords="elder powerful">
+          <img src="images-videos/ancient-curse.jpg" alt="Ancient Curse" loading="lazy">
+          <h3>Ancient Curse</h3>
+          <p class="muted">Elder-level curse with rare powers.</p>
+        </article>
+
+       
+  </main>
+
+  <footer class="site-footer">
+    <p>H&B cooperation ©</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script> AOS.init({ once: true, duration: 700 }); </script>
+  
+</body>
+</html>

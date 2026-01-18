@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <link rel="icon" type="image/png" href="images-videos/Logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .review-container {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #4CAF50;
+    }
+
+    /* Star rating */
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .star {
+      font-size: 30px;
+      cursor: pointer;
+      color: #555;
+      transition: color 0.3s;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      color: #76ff76;
+    }
+
+    /* Emoji display */
+    .emoji {
+      font-size: 40px;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="review-container">
+    <h2>We’d Love Your Feedback!</h2>
+    
+    <!-- Star rating -->
+    <div class="stars" id="stars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+
+    <form onsubmit="submitReview(event)">
+      <textarea id="reviewText" placeholder="Write your review here..."></textarea><br>
+      <input type="hidden" id="rating" name="rating" value="0">
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Emoji output -->
+    <div class="emoji" id="emoji"></div>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+   <!-- Footer -->
+    <footer>
+        <p>© H&B.inc</p>
+    </footer>
+
+  <script src="review.js"></script>
+
+</body>
+</html>
